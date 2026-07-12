@@ -1,0 +1,18 @@
+document.getElementById("botao").addEventListener("click", ()=>{
+
+    alert("Parabéns!\nSeu JavaScript está funcionando.");
+
+});
+
+document.getElementById("botao").addEventListener("click", () => {
+    alert("Parabéns!\nSeu JavaScript está funcionando.");
+});
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+            .register("service-worker.js")
+            .then(() => console.log("Service Worker registrado com sucesso!"))
+            .catch((erro) => console.error("Erro ao registrar:", erro));
+    });
+}
