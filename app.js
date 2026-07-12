@@ -66,3 +66,5 @@ navigator.serviceWorker.addEventListener("controllerchange", () => {
     window.location.reload();
 
 });
+
+await registration.update();
